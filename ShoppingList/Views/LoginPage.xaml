@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShoppingList.Views.LoginPage">
+    <ContentPage.Content>
+        <StackLayout Padding="20,20">
+            <Label Text="Login Info" FontSize="Large" FontAttributes="Bold"></Label>
+            <Border Stroke="Gray" StrokeThickness="1" Margin="15,15,0,0">
+                <Entry x:Name="txtUser" Placeholder="Enter Username"></Entry>
+            </Border>
+            <Border Stroke="Gray" StrokeThickness="1" Margin="15,15,0,0">
+                <Entry x:Name="txtPassword" Placeholder="Enter Password" IsPassword="True"></Entry>
+            </Border>
+            
+            <Button Text="Login" Clicked="Login_OnClicked" Margin="0,60" BackgroundColor="Blue" TextColor="White" FontAttributes="Bold"></Button>
+            <Button Text="Create Account" Clicked="CreateAccount_OnClicked" BackgroundColor="Green" TextColor="White" FontAttributes="Bold"></Button>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
